@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #84a6e9;
+        }
+
+        header {
+            background-color: #941919;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative; /* Add this */
+        }
+
+        .header-content h1 {
+            font-size: 2.5rem;
+        }
+
+        /* Add styles for the round profile picture */
+        .profile-picture {
+            width: 100px; /* Adjust the size as needed */
+            height: 100px;
+            border-radius: 75%; /* Create a circular shape */
+            object-fit: cover; /* To ensure the image fills the circular area */
+            position: absolute; /* Add this */
+            top: 75px; /* Adjust top position as needed */
+            left: 75px; /* Adjust left position as needed */
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .section-content {
+            background-color: #fff;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+        }
+
+        .download-button {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+            align-self: center;
+        }
+
+        .download-button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: #fff;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <!-- Add your profile picture here -->
+            <img src="Hhamirtha.jpg" alt="Your Profile Picture" class="profile-picture">
+            <h1>Hamirtha H</h1>
+            <p>Bsc Computer science</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="I am a B.Sc. Computer Science student specializing in Data Analytics, with a strong foundation in Excel, Pandas and SQL. Passionate about transforming data into actionable insights, I am continuously enhancing my analytical and problem-solving skills.With a keen eye for detail and a structured approach, I strive for accuracy and efficiency in data analysis. Always eager to learn, adapt, and contribute to meaningful projects.
+">About</a></li>
+            <li><a href="Bsc computer science (ongoing 2nd year)2023-2026
+            Dr.Mgr janaki college of arts and science for women">Education</a></li>
+            <li><a href="Data Analytics: Data cleaning, analysis, and visualization
+
+Tools & Technologies: Excel, Pandas, SQL.
+
+Programming: Python (for data analysis)
+strong communication skill
+adaptability
+multi-tasking
+">Skills</a></li>
+            <li><a href="Digital portfolio">Projects</a></li>
+            <li><a href="resume.png">Resume</a></li>
+           
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <p>I'm a <b>Bsc computer science</b> student.passionate about Data Analytics. I love working with data to uncover insights and drive informed decisions. Currently, I am building my skills in Excel, Pandas and SQL. I enjoy solving real-world problems through data-driven approaches. Always eager to learn and grow in the analytics field!
+ </p>
+
+        </div>
+    </section>
+
+    <section id="Bsc Computer science(ongoing 2nd year)2023-2026
+    Dr.Mgr Janaki college of arts and science for women.">
+        <div class="section-content">
+            <h2>Education</h2>
+            <p>Bsc Computer science(ongoing 2nd year)
+       <br>2023-2026</br>
+            
+ <br>University of madras.<br></p>
+            
+            
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <ul>
+                <li>python programming</li>
+                <li>pandas</li>
+                <li>Excel</li>
+                <li>SQL</li>
+                <li>Strong Communication</li>
+                <li>Adaptability</li>
+                <li>Multi-tasking</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-content">
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="#">Digital portfolio</a></li>
+                <!-- Add more project links here -->
+            </ul>
+        </div>
+    </section>
+
+    <section id="resume">
+    
+        <div class="section-content">
+            <center>
+            <h2>Resume</h2>
+            <a href="resume.pdf" target="_blank" class="download-button">Download CV</a>
+        </center>
+        </div>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Hamirtha H</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling to section when clicking on navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
